@@ -1,0 +1,160 @@
+/* You can add global styles to this file, and also import other style files */
+$theme-colors: (
+  primary: #4a2fa9
+);
+
+$container-max-widths: (
+  xl: 1200px
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+html, body {
+  min-height: 100vh;
+}
+
+body {
+  font-family: 'NanumSquare', Dotum, '돋움', Helvetica, 'Apple SD Gothic Neo', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+a {
+  color: rgba(0,0,0,.8);
+}
+
+.form-control-lg {
+  font-size: 16px;
+}
+
+.btn {
+  font-weight: 700;
+}
+
+.btn-lg, .btn-group-lg > .btn {
+  font-size: 18px;
+}
+
+.btn-outline-primary {
+  color: rgba(0,0,0,.8);
+}
+
+.normal {
+  font-weight: 400
+}
+
+.bold, strong {
+  font-weight: 700
+}
+
+.bolder {
+  font-weight: 800
+}
+
+.light {
+  font-weight: 300
+}
+
+
+.form-control-lg {
+  height: calc(2.875rem + 14px);
+}
+
+.btn-lg, .btn-group-lg > .btn {
+  padding: 0.88rem 1rem;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.description {
+  color: rgba(0,0,0,.5);
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+
+// prism.js custom
+.token.property, .token.tag, .token.constant, .token.symbol, .token.deleted {
+  color: #c082ff;
+}
+
+.token.selector, .token.attr-name, .token.string, .token.char, .token.builtin, .token.inserted {
+  color: #74d7ff;
+}
+
+.token.atrule, .token.attr-value, .token.function, .token.class-name {
+  color: #fff;
+}
+
+.invalid-feedback {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  padding: 0 10px;
+  background-color: #fff;
+  width: auto;
+  color: #f40045;
+}
+
+.was-validated .form-control:invalid, .form-control.is-invalid, .was-validated .custom-select:invalid, .custom-select.is-invalid {
+  border-color: #f40045;
+}
+
+
+
+.bg-base {
+  position: relative;
+  padding: 100px 0 122px;
+  &::after {
+    content: '';
+    height: 466px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f0f2f7;
+    z-index: -1;
+  }
+  .flex-center {
+    display: flex;
+    flex-direction: column;
+    //align-content: center;
+    //justify-content: center;
+  }
+
+  .account-progress {
+    font-size: 20px;
+    color: #4a2fa9;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 48px;
+    color: #111;
+    margin: 0 auto 70px;
+  }
+}
+
+.accordion {
+  h5 {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+  }
+}
+
+.btn-footer {
+  margin: 47px auto 49px;
+  display: flex;
+  justify-content: center;
+  .btn {
+    min-width: 220px;
+  }
+}

@@ -1,0 +1,18 @@
+<div class="login">
+  <h3>로그인</h3>
+  <form action="">
+    <div class="form-login">
+
+      <div class="position-relative">
+        <input type="email" name="myEmail" class="form-control form-control-lg is-invalid" placeholder="이메일">
+        <!--<div class="invalid-feedback">{{myLoginZForm.myEmail.$valid}}</div>-->
+        <span class="invalid-feedback">Email is invalid.</span>
+      </div>
+      <input type="password" class="form-control form-control-lg mt-2 mb-3" placeholder="비밀번호" ng-minlength="8">
+      <button type="button" class="btn btn-primary btn-lg btn-block">로그인</button>
+      <button type="button" routerLink="/account" class="btn btn-outline-primary btn-lg btn-block"><span class="oi oi-chevron-right"></span>회원가입</button>
+      <p class="text-right">Forgot password? <a href="#" class="underline">비밀번호 재설정</a></p>
+
+    </div>
+  </form>
+</div>

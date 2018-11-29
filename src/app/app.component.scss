@@ -1,0 +1,198 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins/breakpoints';
+
+.header {
+  .navbar-brand {
+    @include media-breakpoint-up(sm) {
+      top: 45px;
+    }
+    background: url(../assets/images/logo.png) 0 0 no-repeat;
+    width: 130px;
+    height: 40px;
+  }
+
+  .navbar {
+    min-height: 90px;
+
+    .navbar-toggler {
+      border: 1px solid #efefef;
+    }
+    .navbar-collapse {
+      @include media-breakpoint-down(sm) {
+        margin: 20px 0;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+      }
+    }
+    .nav-link { // depth1
+      font-size: 16px;
+      color: #333;
+      @include media-breakpoint-up(sm) {
+        padding: 30px 22px;
+        text-align: center;
+        display: block;
+      }
+      @include media-breakpoint-down(sm) {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+      }
+      &.active {
+        color: rgb(74, 47, 169);
+      }
+    }
+  }
+
+  .account-area {
+    padding: 10px 0;
+  }
+
+  .btn-login {
+    margin-right: 10px;
+    @include media-breakpoint-up(sm) {
+      color: var(--black-80);
+      border: 0;
+    }
+  }
+
+  .btn-primary {
+    min-width: 140px;
+  }
+
+  .dropup, .dropright, .dropdown, .dropleft {
+    position: static;
+  }
+  .dropdown-menu {
+    top: 90px;
+    width: 100%;
+    border-radius: 0;
+    background-color: rgb(255, 255, 255);
+    font-size: 15.5px;
+    color: rgba(17, 17, 17, 0.8);
+    @include media-breakpoint-down(sm) {
+      border: 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    }
+
+    .title {
+      display: none;
+      @include media-breakpoint-up(sm) {
+        padding-left: 170px;
+        padding-top: 45px;
+        display: block;
+      }
+    }
+    h4 {
+      font-size: 27.5px;
+      font-weight: 900;
+      color: #4a2fa9;
+    }
+
+    p {
+      font-size: 18px;
+      color: rgba(17, 17, 17, 0.5);
+    }
+  }
+
+  .dropdown-item {
+    @include media-breakpoint-up(sm) {
+      padding: 25px 10px;
+    }
+  }
+
+}
+
+// pc에서 드롭다운 메뉴 이벤트 변경 : click >> mouseover
+@include media-breakpoint-up(sm) {
+  .dropdown {
+    & > .dropdown-toggle:active {
+      pointer-events: none;
+    }
+    .dropdown-menu {
+      //transition: all .2s;
+      overflow: hidden;
+      transform-origin: top center;
+      transform: scale(1, 0);
+      .dropdown-menu {
+        transform: scale(1);
+        //transition: all .2s;
+      }
+    }
+
+    &:hover {
+      .dropdown-menu { //2차메뉴
+        transform: scale(1);
+        display: block;
+      }
+    }
+  }
+}
+
+
+// pc에서 드롭다운 메뉴 이벤트 변경 : click >> mouseover
+.up-sm {
+  .dropdown {
+    & > .dropdown-toggle:active {
+      pointer-events: none;
+    }
+    .dropdown-menu {
+      //transition: all .2s;
+      overflow: hidden;
+      transform-origin: top center;
+      transform: scale(1, 0);
+      .dropdown-menu {
+        transform: scale(1);
+        //transition: all .2s;
+      }
+    }
+
+    &:hover {
+      .dropdown-menu { //2차메뉴
+        transform: scale(1);
+        display: block;
+      }
+    }
+  }
+}
+
+.footer {
+  position: relative;
+  background-color: #000e28;
+  min-height: 340px;
+  padding: 40px 20px;
+  @include media-breakpoint-up(sm){
+    padding: 88px 0;
+  }
+
+  .logo {
+    display: block;
+    background: url(../assets/images/logo-footer.png) 0 0 no-repeat;
+    width: 199px;
+    height: 57px;
+    margin-bottom: 23px;
+  }
+
+  address {
+    color: #fff;
+    font-size: 18px;
+  }
+
+  dt a {
+    display: block;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  dd, a {
+    color: #707785;
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  @include media-breakpoint-only(xs) { // 모바일일때
+    dd {
+      display: none;
+    }
+  }
+}
+
+

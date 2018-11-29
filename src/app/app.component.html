@@ -1,0 +1,161 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!--[if IE]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="header">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" routerLink="/"><span class="sr-only">CODEF API</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="products">제품소개</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">이용사례</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6 title">
+                    <h4>이용사례</h4>
+                    <p>CODE F와 함께한 <br>
+                      수많은 활용사례를 확인해 보세요.</p>
+                  </div>
+                  <div class="col">
+                    <div class="row">
+                      <a class="col-md-6 dropdown-item" href="#">자산관리</a>
+                      <a class="col-md-6 dropdown-item" href="#">인증</a>
+                      <a class="col-md-6 dropdown-item" href="#">보험</a>
+                      <a class="col-md-6 dropdown-item" href="#">그 외 서비스</a>
+                      <a class="col-md-6 dropdown-item" href="#">기업서비스</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">개발가이드</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6 title">
+                    <h4>개발가이드</h4>
+                    <p>CODE F API를 이용해 <br>
+                      창의적인 애플리케이션을 제작해 보세요.</p>
+                  </div>
+                  <div class="col">
+                    <div class="row">
+                      <a class="col-md-6 dropdown-item" href="#">빠른 시작</a>
+                      <a class="col-md-6 dropdown-item" href="#">라이브러리</a>
+                      <a class="col-md-6 dropdown-item" href="#">API문서</a>
+                      <a class="col-md-6 dropdown-item" href="#">자주묻는 질문</a>
+                      <a class="col-md-6 dropdown-item" href="#">API 업그레이드</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pricing">가격정책</a>
+          </li>
+          <li class="nav-ite">
+            <a class="nav-link" href="aboutUs">회사소개</a>
+          </li>
+        </ul>
+        <form class="account-area">
+          <a routerLink="login" class="btn btn-outline-primary btn-login">로그인</a>
+          <button class="btn btn-primary" type="submit">Get API Keys</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<!--<router-outlet></router-outlet>-->
+<div [@routeAnimation]="getAnimationData(routerOutlet)">
+  <router-outlet #routerOutlet="outlet"></router-outlet>
+</div>
+
+<div class="footer">
+  <div class="container">
+
+
+    <div class="row">
+
+      <div class="col-md-4">
+        <a href="#none" class="logo"><span class="sr-only">codeF</span></a>
+        <address>© 2018 codeF. All right reserved. <br>
+          Proudly made in Korea.</address>
+      </div>
+
+      <dl class="col-md">
+        <dt><a href="#none">Company</a></dt>
+        <dd><a href="#none">About</a></dd>
+        <dd><a href="#none">Leadership</a></dd>
+        <dd><a href="#none">Blog</a></dd>
+        <dd><a href="#none">Careers</a></dd>
+        <dd><a href="#none">Partner Network</a></dd>
+        <dd><a href="#none">Referral Program</a></dd>
+        <dd><a href="#none">Events</a></dd>
+        <dd><a href="#none">Press</a></dd>
+        <dd><a href="#none">Legal & Security</a></dd>
+      </dl>
+
+      <dl class="col-md">
+        <dt><a href="#none">Products</a></dt>
+        <dd><a href="#none">Droplets</a></dd>
+        <dd><a href="#none">Spaces</a></dd>
+        <dd><a href="#none">Kubernetes</a></dd>
+        <dd><a href="#none">Load Balancers</a></dd>
+        <dd><a href="#none">Block Storage</a></dd>
+        <dd><a href="#none">Tools & Integrations</a></dd>
+        <dd><a href="#none">One-Click Apps</a></dd>
+        <dd><a href="#none">API</a></dd>
+        <dd><a href="#none">Pricing</a></dd>
+        <dd><a href="#none">Documentation</a></dd>
+        <dd><a href="#none">Release Notes</a></dd>
+      </dl>
+
+      <dl class="col-md">
+        <dt><a href="#none">Community</a></dt>
+        <dd><a href="#none">Tutorials</a></dd>
+        <dd><a href="#none">Meetups</a></dd>
+        <dd><a href="#none">Q&A</a></dd>
+        <dd><a href="#none">Write for DOnations</a></dd>
+        <dd><a href="#none">Droplets for Demos</a></dd>
+        <dd><a href="#none">Hatch</a></dd>
+        <dd><a href="#none">Shop Swag</a></dd>
+        <dd><a href="#none">Research Program</a></dd>
+        <dd><a href="#none">Currents Research</a></dd>
+        <dd><a href="#none">Open Source</a></dd>
+      </dl>
+
+      <dl class="col-md">
+        <dt><a href="#none">Support</a></dt>
+        <dd><a href="#none">Contact Support</a></dd>
+        <dd><a href="#none">FAQ</a></dd>
+        <dd><a href="#none">Network Status</a></dd>
+      </dl>
+
+    </div>
+
+  </div>
+</div>
+
+
+<div id="device-size-detector">
+  <div id="xs" class="d-block d-sm-none"></div>
+  <div id="sm" class="d-none d-sm-block d-md-none"></div>
+  <div id="md" class="d-none d-md-block d-lg-none"></div>
+  <div id="lg" class="d-none d-lg-block d-xl-none"></div>
+  <div id="xl" class="d-none d-xl-block"></div>
+</div>
